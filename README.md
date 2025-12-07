@@ -1,15 +1,15 @@
 # Responsi 2 - Praktikum Pemrograman Berorientasi Objek
 
-**Dibuat oleh:** [Nama Anda]  
-**NIM:** [NIM Anda]  
-**Shift Baru:** [Shift Anda]    
-**Shift KRS:** [Shift Anda]
+**Dibuat oleh:** Aditya  
+**NIM:** H1D024107  
+**Shift Baru:** B  
+**Shift KRS:** C
 
 ---
 
-#  INGAT!!
+# INGAT!!
 
-1. Kode didesain untuk terdapat banyak kesalahan, maka dari itu. Perbaiki kode agar dapat berjalan sesuai yang diharapkan. 
+1. Kode didesain untuk terdapat banyak kesalahan, maka dari itu. Perbaiki kode agar dapat berjalan sesuai yang diharapkan.
 2. Jalankan Program dari setiap folder pertemuan, jika tidak maka akan konflik pada `public static void main args`
 
 ## Soal Pengayaan
@@ -24,14 +24,15 @@ Jawab Setiap file `Pengayaan.txt` di masing-masing file pengayaan, untuk pertany
 4. Buat laporan dalam bentuk PDF untuk setiap pertemuan yang memuat alur kerja, fungsi yang digunakan, dan hasil output program. Simpan laporan pada folder pertemuan masing-masing.
 5. Kemudian unggah repository ke GitHub.
 
-1. **Inisialisasi Git Repository**
+6. **Inisialisasi Git Repository**
 
-2. **Buat Repository di GitHub**
+7. **Buat Repository di GitHub**
+
    - Nama repository: `responsi2pbo(NIM)`
 
-3. **Push ke GitHub**
+8. **Push ke GitHub**
 
-4. **Isi Form Pengumpulan**
+9. **Isi Form Pengumpulan**
    - Akses link form [pengumpulan responsi](https://forms.gle/z9sk3pbqVdCecq3u7)
    - Masukkan link repository GitHub
    - Submit form
@@ -41,11 +42,13 @@ Jawab Setiap file `Pengayaan.txt` di masing-masing file pengayaan, untuk pertany
 ## Catatan Penting
 
 ### Tips Pengerjaan
-**Case Sensitive**: Nama file Java harus sama persis dengan nama class (termasuk huruf besar/kecil)     
-**Package**: Jika menggunakan package, sesuaikan struktur folder    
+
+**Case Sensitive**: Nama file Java harus sama persis dengan nama class (termasuk huruf besar/kecil)  
+**Package**: Jika menggunakan package, sesuaikan struktur folder  
 **Testing**: Jalankan setiap program untuk memastikan output sesuai ekspektasi
 
 ### Troubleshooting
+
 - **Error "cannot find symbol"**: Pastikan semua class sudah dikompilasi
 - **Error "class X is public, should be declared in a file named X.java"**: Periksa nama file dan nama class
 - **NoClassDefFoundError**: Pastikan menjalankan dari direktori yang benar
