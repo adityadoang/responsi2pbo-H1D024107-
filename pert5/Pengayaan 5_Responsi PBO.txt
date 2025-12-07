@@ -5,3 +5,21 @@ Jawablah pertanyaan berikut:
 3. Apa perbedaan override dan overload?
 4. Apa keuntungan menggunakan polimorfisme dalam sistem inventaris seperti contoh di atas?
 5. Bagaimana cara kerja dynamic dispatch pada Java saat memanggil method override?
+
+JAWABAN
+1. Polimorfisme adalah kemampuan satu referensi (tipe induk) untuk merujuk ke banyak bentuk objek (objek subclass yang berbeda), namun ketika method dipanggil, yang dijalankan adalah versi method sesuai class asli objeknya.
+Method override bekerja ketika subclass membuat method dengan nama, parameter, dan tipe return yang sama dengan method di superclass. Saat dipanggil lewat referensi tipe induk, Java akan menjalankan implementasi di subclass (bukan lagi yang di parent).
+2.Karena mesinMotor dan mesinTraktor adalah subclass dari defaultMesin. Dalam OOP, objek subclass bisa diperlakukan sebagai objek superclass-nya (hubungan is-a). Jadi array bertipe defaultMesin[] boleh berisi objek defaultMesin, mesinMotor, mesinTraktor, maupun mesinTraktorListrik.
+3.Overriding:
+-Terjadi di hubungan inheritance (parent–child).
+-Nama method sama, parameter sama, tipe return konsisten, tapi implementasi di subclass mengganti perilaku parent.
+Overloading
+-Terjadi di class yang sama.
+-Nama method sama, tapi parameter berbeda (jumlah/tipe/urutan).
+-Dipilih berdasarkan parameter saat compile time.
+4.-Bisa menyimpan berbagai jenis mesin (mesinMotor, mesinTraktor, mesinTraktorListrik) dalam satu array bertipe defaultMesin.
+-Saat memanggil tampilInfo(), kategoriMesin(), atau nilaiPerforma(), kita tidak perlu if/else berdasarkan tipe mesin — cukup panggil method yang sama, dan polimorfisme akan memilih implementasi yang tepat.
+-Kode jadi lebih rapi, reusable, dan mudah dikembangkan kalau nantinya ada jenis mesin baru.
+5.-Saat compile time, Java hanya mengecek bahwa method tersebut ada di tipe referensi (misal tipe defaultMesin).
+-Saat runtime, Java melihat objek asli yang dirujuk (misal ternyata objek mesinTraktorListrik) dan mengeksekusi implementasi method milik class itu.
+Mekanisme pemilihan method berdasarkan tipe objek saat runtime inilah yang disebut dynamic dispatch.

@@ -1,28 +1,21 @@
 public class UjiSDM {
     public static void main(String[] args) {
-        
-        // ==========================================================
-        // DATA UJI COBA
-        // ==========================================================
-        
-        // 1. BUAT OBJEK ProgrammerMagang
-        // Gunakan constructor dengan data: "Andi", 50000.0, "1234".
-        
-        
-        // 2. PENGUJIAN METODE BERURUTAN
-        
-        // Panggil method hitungGaji(160).
-        
-        // Cetak hasil dari method getStatusCuti().
-        
-        // Panggil login("9999") (Tes PIN salah).
-        
-        // Panggil login("1234") (Tes PIN benar).
-        
-        // Cetak hasil dari method getRoleAkses().
-        
-        // Panggil perpanjangKontrak(6).
-        
-        // Panggil logout().
+        ProgrammerMagang andi = new ProgrammerMagang("Andi", 50000.0, "1234");
+
+        System.out.println("=== PENGUJIAN PROGRAMMER MAGANG ===");
+
+        double gaji = andi.hitungGaji(160);
+        System.out.println("Gaji Andi (160 jam) adalah: Rp " + gaji);
+
+        System.out.println("Status Cuti: " + andi.getStatusCuti());
+
+        andi.login("9999");
+        andi.login("1234");
+
+        System.out.println("Role Akses: " + andi.getRoleAkses());
+
+        andi.perpanjangKontrak(6);
+
+        andi.logout();
     }
 }

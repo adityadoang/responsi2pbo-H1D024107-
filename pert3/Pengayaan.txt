@@ -8,3 +8,10 @@ Setelah menyelesaikan kode, jawab pertanyaan berikut:
 5. Mengapa kita perlu menggunakan Inheritance? Apa keuntungan utamanya dibandingkan membuat dua class yang terpisah sama sekali (misal class Karyawan dan class Manajer dibuat terpisah tanpa hubungan)?
 
 Jawaban:
+
+1.Keyword extends digunakan untuk menyatakan bahwa suatu class mewarisi sifat, atribut, dan method dari class lain. Class anak (subclass) otomatis memiliki semua fitur dasar class induk (superclass).
+2.-Overloading = method nama sama, tetapi parameter berbeda, dan berada dalam class yang sama.
+  -Overriding = method nama sama, parameter sama, tetapi berada di class turunan, tujuannya untuk mengubah perilaku method parent.
+3.super() dipakai untuk memanggil constructor milik superclass (Karyawan) agar atribut yang diwarisi dapat diinisialisasi dengan benar.
+4.class Manajer tidak bisa mengaksesnya secara langsung. Solusinya: gunakan getter / setter, atau ubah ke protected jika ingin bisa diakses oleh subclass secara langsung.
+5.Karena inheritance membuat kode lebih efisien, terstruktur, reusable, dan menghindari duplikasi kode. Tanpa inheritance, class Karyawan dan Manajer harus ditulis dua kali dari awal, padahal banyak fitur mereka sama.
